@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+      .in { text-indent:30px}
+  </style> 
+  </head>
+  <body>
+      <h3>FLASK APP - API list</h3>
+      <br>
+      <li>GET 127.0.0.1/5000/model : ML 모델 정보</li>
+      <br>
+      <li>POST 127.0.0.1/5000/model/predict : 모델 예측 실행</li>
+      <div class='in'>json example : 
+        {          
+        "시군구코드" : [11680],
+        "법정동코드" : [11000],
+        "신고년도" : [2020],
+        "대지권면적" : [0],
+        "건물면적" : [141],
+        "층정보" : [9],
+        "건축년도" : [1976],
+        "건물명" : ["현대1,2차"]
+        }
+      </div>
+    <br>    
+    <li>GET 127.0.0.1/5000/metabase/dashboard : apartment price DB graph</li> 
+    <br>
+    <li>GET 127.0.0.1/5000/metabase/feature_importance : ML model feature importance</li> 
+   </body>
+</html>
+
